@@ -1,15 +1,13 @@
 import "./App.css";
-import Cart from "./components/Cart";
-import { Item } from "./components/Item";
+import TodoInput from "./components/TodoInput";
 
 function App() {
   return (
     <>
-      <h1>Context API</h1>
-      <Item name="MacBook" price={1000} />
-      <Item name="Apple Cloth" price={1000} />
-      <Item name="Pendrive" price={10} />
-      <Cart />
+      <div className="taskInput">
+        <h1>Todo Task</h1>
+        <TodoInput />
+      </div>
     </>
   );
 }
